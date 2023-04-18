@@ -17,8 +17,10 @@ This front-end application will have the following features:
 1. Create a React App with Vite (actioned)
 2. Add fetch function to retrieve the list of books -> useEfect & axios
 3. Display data as a table -> displayed with React Table Hook
-4. create a card component for each book which gets open on click
-5. display book details on a card on click
+4. Add routing to the app (route: "http://localhost:5173/${id})
+5. create a card component for each book which gets open on click
+6. display book details on a card on click
+7. Add CSS styling
 
 ## Hooks used
 React Table: https://www.npmjs.com/package/react-table
