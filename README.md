@@ -15,7 +15,9 @@ This front-end application will have the following features:
 ## App development plan
 1. Create a React App with Vite
 2. Add fetch function to retrieve the list of books with UseEffect & UseState
-3. 
+3. Display data as a table
+4. create a card component for each book which is open on click
+5. display book details on a card on click
 
 ## Additional Features 
 1. Sorting books by title, author, publish date
