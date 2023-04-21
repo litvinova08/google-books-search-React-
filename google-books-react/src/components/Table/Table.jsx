@@ -4,7 +4,7 @@ import { useTable } from "react-table/dist/react-table.development";
 import { useEffect, useState } from "react";
 import { COLUMNS } from "./Columns";
 import styles from "./Table.module.scss";
-import MOCK_DATA from "./../../../assets/MOCK_DATA.json";
+import MOCK_DATA from "../../assets/MOCK_DATA.json";
 
 const Table = ({ books }) => {
   const columns = useMemo(() => COLUMNS, []);
