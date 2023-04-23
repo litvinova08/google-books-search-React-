@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Header from "./components/Header/Header";
 import axios from "axios";
 import "./App.css";
 import Table from "./components/Table/Table";
@@ -36,13 +35,7 @@ function App() {
               loadingData ? <p>Please, wait</p> : <Table books={books} />
             }
           ></Route>
-          <Route
-            // path="https://www.googleapis.com/books/v1/volumes/VuVuDQAAQBAJ"
-            // path="/VuVuDQAAQBAJ"
-            path="/:id"
-            element={<BookCard />}
-          ></Route>
-          {/* {loadingData ? <p>Please, wait</p> : <Table books={books} />} */}
+          <Route path="/:id" element={<BookCard />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

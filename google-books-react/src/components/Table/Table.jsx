@@ -1,19 +1,22 @@
 import React, { useMemo } from "react";
 // import { useTable } from "react-table";
-import { useTable } from "react-table/dist/react-table.development";
+import { useTable, useSortBy } from "react-table/dist/react-table.development";
 import { useEffect, useState } from "react";
 import { COLUMNS } from "./Columns";
-import styles from "./Table.module.scss";
 import MOCK_DATA from "../../assets/MOCK_DATA.json";
+import styles from "./../Table/Table.module.scss";
 
 const Table = ({ books }) => {
   const columns = useMemo(() => COLUMNS, []);
   const data = useMemo(() => books, []);
 
-  const tableInstance = useTable({
-    columns,
-    data,
-  });
+  const tableInstance = useTable(
+    {
+      columns,
+      data,
+    },
+    useSortBy
+  );
 
   //destructuring table instance
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
@@ -25,7 +28,16 @@ const Table = ({ books }) => {
         {headerGroups.map((headerGroup) => (
           <tr {...headerGroup.getHeaderGroupProps()}>
             {headerGroup.headers.map((column) => (
-              <th {...column.getHeaderProps()}>{column.render("Header")}</th>
+              <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                {column.render("Header")}
+                <span>
+                  {column.isSorted
+                    ? column.isSortedDesc
+                      ? " (B -> A)"
+                      : " (A -> B)"
+                    : ""}
+                </span>
+              </th>
             ))}
           </tr>
         ))}

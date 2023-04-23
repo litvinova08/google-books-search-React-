@@ -35,7 +35,9 @@ const BookCard = () => {
       <h3>Book Title: {book.volumeInfo.title}</h3>
       <p>Book Authors: {book.volumeInfo.authors}</p>
       <img src={book.volumeInfo.imageLinks.small}></img>
-      <p>Description: {book.volumeInfo.description}</p>
+      <div
+        dangerouslySetInnerHTML={{ __html: book.volumeInfo.description }}
+      ></div>
     </div>
   );
 };
