@@ -4,6 +4,8 @@ import axios from "axios";
 import "./App.css";
 import Table from "./components/Table/Table";
 import BookCard from "./components/BookCard/BookCard";
+import Nav from "./components/Nav/Nav";
+import Search from "./components/Search/Search";
 
 function App() {
   const [loadingData, setLoadingdata] = useState(true);
@@ -32,10 +34,18 @@ function App() {
           <Route
             path="/"
             element={
-              loadingData ? <p>Please, wait</p> : <Table books={books} />
+              loadingData ? (
+                <p>Please, wait</p>
+              ) : (
+                <div>
+                  {" "}
+                  <Nav /> <Table books={books} />{" "}
+                </div>
+              )
             }
           ></Route>
           <Route path="/:id" element={<BookCard />}></Route>
+          <Route path="/search" element={<Search />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { urls } from "./../../assets/values";
 import { NavLink, useParams } from "react-router-dom";
+import Nav from "../Nav/Nav";
 
 const BookCard = () => {
   const { id } = useParams();
@@ -30,7 +31,7 @@ const BookCard = () => {
     <p>Please, wait</p>
   ) : (
     <div>
-      Book
+      <Nav />
       <NavLink to={`/${id}`}></NavLink>
       <h3>Book Title: {book.volumeInfo.title}</h3>
       <p>Book Authors: {book.volumeInfo.authors}</p>

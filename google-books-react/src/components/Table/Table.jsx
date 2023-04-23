@@ -1,10 +1,8 @@
 import React, { useMemo } from "react";
-// import { useTable } from "react-table";
 import { useTable, useSortBy } from "react-table/dist/react-table.development";
-import { useEffect, useState } from "react";
 import { COLUMNS } from "./Columns";
-import MOCK_DATA from "../../assets/MOCK_DATA.json";
 import styles from "./../Table/Table.module.scss";
+import Search from "../Search/Search";
 
 const Table = ({ books }) => {
   const columns = useMemo(() => COLUMNS, []);
@@ -23,6 +21,8 @@ const Table = ({ books }) => {
     tableInstance;
 
   return (
+    // <div>
+    //   <Search></Search>
     <table {...getTableProps()}>
       <thead>
         {headerGroups.map((headerGroup) => (
@@ -55,6 +55,7 @@ const Table = ({ books }) => {
         })}
       </tbody>
     </table>
+    // </div>
   );
 };
 
