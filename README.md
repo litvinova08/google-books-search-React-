@@ -1,4 +1,4 @@
-# Google Books Searc (React app)
+# Google Books Search (React app)
 
 This app performs a volumes search by sending an HTTP GET request to the following URI:
 https://www.googleapis.com/books/v1/volumes?q=search+terms
