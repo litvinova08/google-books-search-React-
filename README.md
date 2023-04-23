@@ -13,6 +13,7 @@ This front-end application have the following features:
 3. Present the fetched data in a table, including book title, authors, and published date.
 4. Enable users to view more details of a selected book, such as title, subtitle, authors, image, and description.
 5. Enable users to sort books by title, author, publish date. 
+6. Enable users to search books
 
 ## App development steps
 1. Created a React App with Vite 
@@ -22,6 +23,7 @@ This front-end application have the following features:
 5. Additional book details displayed on click include book title, book authors, image (if applicable) and description. Description is rendered using dangerouslySetInnerHTML command.
 6. Added a functionality to allow sorting books by title, author, publish date using useSortBy hook from react-table. 
 7. Added  "Return to all books" to BookCard to enable users to return to the home page with the list of all books.
+8. Added "Search" tab where users can search books and form a table with books of their preference. At present, the table can be rendered only once. The user have to refresh the page to be able to search again
 
 ## Hooks used and features documentation
 1. React Table: https://www.npmjs.com/package/react-table
@@ -29,8 +31,8 @@ This front-end application have the following features:
 3. dangerouslySetInnerHTML https://legacy.reactjs.org/docs/dom-elements.html
 
 ## Additional fatures planned to be implemented
-1. Book search
-3. if image not available display a default image
+1. if image not available display a default image
+2. move fetch functionality to a separate file in "services"
 5. Add search history
 6. Add favouriting books (could be done with redux)
 7. Add books rating system (could be done with redux)
