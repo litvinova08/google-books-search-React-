@@ -21,6 +21,7 @@ This front-end application have the following features:
 4. A card component with additional information about each book gets open on click "More Info". Data is being fetched from https://www.googleapis.com/books/v1/volumes/${id}
 5. Additional book details displayed on click include book title, book authors, image (if applicable) and description. Description is rendered using dangerouslySetInnerHTML command.
 6. Added a functionality to allow sorting books by title, author, publish date using useSortBy hook from react-table. 
+7. Added  "Return to all books" to BookCard to enable users to return to the home page with the list of all books.
 
 ## Hooks used and features documentation
 1. React Table: https://www.npmjs.com/package/react-table
@@ -29,7 +30,6 @@ This front-end application have the following features:
 
 ## Additional fatures planned to be implemented
 1. Book search
-2. Add navigation menu with a Home page
 3. if image not available display a default image
 5. Add search history
 6. Add favouriting books (could be done with redux)
