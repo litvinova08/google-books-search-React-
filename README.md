@@ -26,12 +26,13 @@ This front-end application have the following features:
 ## Additional fatures planned to be implemented
 1. Sorting books by title, author, publish date
 2. Book search
-3. if image not available display a default image
-4. Add CSS styling
-5. Add search history
-6. Add favouriting books (could be done with redux)
-7. Add books rating system (could be done with redux)
-8. Add personal reviews to your books (could be done with redux)
-9. Use google books API collections features
-10. Get good reads links and displaying them on the page
-11. Use Book form for submission for books you can't find in the API (react-hook-form)
+3. Add navigation menu with a Home page
+4. if image not available display a default image
+5. Add CSS styling
+6. Add search history
+7. Add favouriting books (could be done with redux)
+8. Add books rating system (could be done with redux)
+9. Add personal reviews to your books (could be done with redux)
+10. Use google books API collections features
+11. Get good reads links and displaying them on the page
+12. Use Book form for submission for books you can't find in the API (react-hook-form)
