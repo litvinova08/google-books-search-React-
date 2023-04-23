@@ -31,8 +31,10 @@ This front-end application have the following features:
 3. dangerouslySetInnerHTML: https://legacy.reactjs.org/docs/dom-elements.html
 
 ## Additional fatures planned to be implemented
-1. if image not available display a default image
-2. move fetch functionality to a separate file in "services"
+1. Add testing
+2. if image not available display a default image
+3. move fetch functionality to a separate file in "services"
+4. enable multiple search
 5. Add search history
 6. Add favouriting books (could be done with redux)
 7. Add books rating system (could be done with redux)
