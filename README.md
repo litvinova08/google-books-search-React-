@@ -31,7 +31,6 @@ This front-end application have the following features:
 1. Book search
 2. Add navigation menu with a Home page
 3. if image not available display a default image
-4. Add CSS styling
 5. Add search history
 6. Add favouriting books (could be done with redux)
 7. Add books rating system (could be done with redux)
