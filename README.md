@@ -3,6 +3,8 @@
 This app performs a volumes search by sending an HTTP GET request to the following URI:
 https://www.googleapis.com/books/v1/volumes?q=search+terms
 
+## Related Project
+Google Book Search (JavaScript): https://github.com/litvinova08/google-books-search 
 
 ## App Features
 This front-end application have the following features:
