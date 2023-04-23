@@ -28,7 +28,7 @@ This front-end application have the following features:
 ## Hooks used and features documentation
 1. React Table: https://www.npmjs.com/package/react-table
 2. Axios: https://www.npmjs.com/package/axios
-3. dangerouslySetInnerHTML https://legacy.reactjs.org/docs/dom-elements.html
+3. dangerouslySetInnerHTML: https://legacy.reactjs.org/docs/dom-elements.html
 
 ## Additional fatures planned to be implemented
 1. if image not available display a default image
